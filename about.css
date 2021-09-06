@@ -1,0 +1,216 @@
+
+
+
+@font-face {
+    font-family: Cocogoose;
+    font-weight: bold;
+    src: url("./../fonts/Cocogoose_trial.otf") format("opentype");
+  }
+
+
+
+
+nav{
+
+    background-color:  #272a31 ;
+    height: 4.5rem;
+    width: 100%;
+    /*position: fixed !important;*/
+   /* z-index: 100;*/
+    top: 0;
+    bottom: 0;
+    text-align: left;
+    padding: 0;
+    border: none;
+    
+}
+
+.hamburger{
+
+    background-color: #272a31 ;
+    color: white;
+    border: none;
+    width: 10px;
+    
+}
+
+.infos{
+    background-color: #f7f7f7;
+    
+   
+}
+
+
+
+div.orange-line {
+    width: 33%;
+    height: 2px;
+    background-color: #EC5242;
+    margin: auto;
+}
+
+
+.ourmilkyway{
+    width: 100%;
+    text-align: center;
+    color: #EC5242;
+    text-transform: uppercase;
+    padding-top: 4rem;
+    
+   
+    
+}
+
+.conference-description{
+    margin: 61px auto;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: 75%;
+    background-color: white;
+    border: 1px solid #d3d3d3;
+}
+
+
+.contact{
+    text-align: center;
+    padding-bottom: 38px;
+}
+
+.contact a{
+    margin-bottom: 10px;
+    text-decoration: underline;
+    color: black;
+    
+}
+
+.conference-logo{
+    text-align: center;
+    border-bottom: 2px solid gray;
+
+}
+
+.logo-title
+{
+    font-size: bold;
+    margin-bottom: 18px;
+    margin-top: 44px;
+}
+
+.logo-description{
+    margin-top: 51px;
+}
+
+.conference-logo img{
+    width: 68%;
+    margin-top: 2rem;
+    border: 1px solid gray;
+    margin-bottom: 35px;
+}
+
+.past-conference{
+    text-align: center;
+}
+
+.past-title{
+
+    font-size: bold;
+    margin-bottom: 18px;
+    margin-top: 44px;
+
+
+}
+
+.past-description{
+
+    margin-top: 51px;
+    
+
+}
+
+.past-conference-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border-bottom: 1px solid gray;
+    padding-bottom: 63px;
+}
+
+
+
+.background1{
+    background: url("img/background4.png") no-repeat ;
+    background-color: #ec534288 ;
+    background-size:cover;
+    background-position: center;
+}
+
+
+.past-conf1{
+    height: 100%;
+    width: 100%;
+    background-color: #ec534288 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .2rem;
+}
+
+
+.background2{
+    background: url("img/background3.jpg") no-repeat ;
+    background-color:#ec534288 ;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.past-conf2{
+    height: 100%;
+    width: 100%;
+    background-color: #ec534288 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:1.1rem;
+}
+
+.past-conf-title{
+    padding: 1rem;
+    color: white;
+}
+
+.past-conf-description{
+    padding: 2rem;
+    color: white;
+    font-weight: 500;
+
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer > img{
+
+    align-items: center;
+    max-width: 200px;
+    max-height: 100px;
+    margin-left: 107px;
+    margin-top: 35px;
+    margin-bottom: 10px;
+
+
+}
+
+footer > div{
+    text-align: center;
+    font-weight: 500;
+}

@@ -1,0 +1,232 @@
+@font-face {
+    font-family: Cocogoose;
+    font-weight: bold;
+    src: url("./../fonts/Cocogoose_trial.otf") format("opentype");
+  }
+
+
+
+
+nav{
+
+    background-color:  #272a31 ;
+    height: 4.5rem;
+    width: 100%;
+    position: fixed !important;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    text-align: left;
+    padding: 0;
+    border: none;
+    
+}
+
+.hamburger{
+
+    background-color: #272a31 ;
+    color: white;
+    border: none;
+    width: 10px;
+    
+}
+
+.welcome{
+    background:  url("img/background4.png") no-repeat ;
+    background-position:center ;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 4.5rem;
+}
+
+.welcome h1{
+    background-color: rgb(255, 255, 255, 0.7);
+    width: 100%;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    overflow: hidden;
+    font-weight: 800;
+    font-size: 2rem;
+    padding: 4px;
+    position: relative;
+    top: 30px;
+    
+    
+
+
+}
+
+.welcome p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 1rem 1rem;
+    width: 80%;
+    color: white;
+    border: solid 2px white;
+    margin: 4rem 2rem;
+}
+
+.welcome .conf-time{
+
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-bottom: 32px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0) ;
+}
+
+.welcome .location{
+
+    text-align: start;
+}
+
+
+.main-program{
+
+    background: url("img/programbackground.png") repeat;
+    min-height: 50vh;
+    margin-top: -2rem;
+
+
+}
+
+.main-program > div > h2{
+    color: white;
+    text-align: center;
+    padding-top: 1.5rem;
+
+
+
+}
+
+.main-program > div > div{
+    width: 30%;
+    height: 3px;
+    background-color:#EC5242 ;
+    margin: 24px 115px;
+}
+
+
+.programs{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.program{
+
+    background-color: rgba(255,255,255,.3);
+    width: 96%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 5fr;
+    border: 2px solid transparent;
+    align-content: center;
+
+    text-align: center;
+}
+
+.program > h3{
+    color: #EC5242;
+    font-size: 1rem;
+    align-self: center;
+}
+.program .fa {
+    margin-top: 41px ;
+    margin-left: 2px;
+}
+
+.program > p {
+    color: white;
+    padding-top: 1rem;
+    font-weight: 500;
+}
+
+
+
+.register{
+
+    background-color: #EC5242;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 1.2rem;
+    margin: 0.2rem;
+    margin-bottom: 30px;
+
+}
+
+.funding{
+    background-color:#414246 ;
+}
+
+.funding > div>  h2{
+    text-align: center;
+    font-size: x-large;
+    color: white;
+    padding-top: 60px;
+    padding-bottom: 35px;
+}
+
+.funding > div > div{
+    background-color: #EC5242;
+    width: 33%;
+    height: 3px;
+    margin: auto;
+    
+}
+
+.list-partners ul{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    
+    
+
+}
+
+.list-partners ul{
+    list-style-type: none;
+}
+
+.list-partners img{
+   max-width: 200px;
+   max-height: 100px;
+   border-radius: 5px;
+   margin-left: -29px;
+   margin-bottom: 40px;
+   
+
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer > img{
+
+    align-items: center;
+    max-width: 200px;
+    max-height: 100px;
+    margin-left: 107px;
+    margin-top: 35px;
+    margin-bottom: 10px;
+
+
+}
+
+footer > div{
+    text-align: center;
+    font-weight: 500;
+}
