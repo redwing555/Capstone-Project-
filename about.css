@@ -15,7 +15,7 @@ nav{
     background-color:  #272a31 ;
     height: 4.5rem;
     width: 100%;
-    /*position: fixed !important;*/
+    position: fixed !important;
    /* z-index: 100;*/
     top: 0;
     bottom: 0;
@@ -23,6 +23,16 @@ nav{
     padding: 0;
     border: none;
     
+}
+
+
+
+.social-media-contact{
+    display: none;
+}
+
+.desktop-nav{
+    display: none;
 }
 
 .hamburger{
@@ -34,8 +44,15 @@ nav{
     
 }
 
+.hide-mobile{
+    display: none;
+}
+
 .infos{
     background-color: #f7f7f7;
+    margin-top: 4rem;
+    padding-top: 1rem;
+    
     
    
 }
@@ -85,6 +102,14 @@ div.orange-line {
     
 }
 
+.arrow{
+    border-style: none;
+    background-color: transparent;
+}
+
+
+
+
 .conference-logo{
     text-align: center;
     border-bottom: 2px solid gray;
@@ -96,10 +121,12 @@ div.orange-line {
     font-size: bold;
     margin-bottom: 18px;
     margin-top: 44px;
+    font-family: Cocogoose;
 }
 
 .logo-description{
     margin-top: 51px;
+    padding: 1rem;
 }
 
 .conference-logo img{
@@ -115,9 +142,10 @@ div.orange-line {
 
 .past-title{
 
-    font-size: bold;
+    
     margin-bottom: 18px;
     margin-top: 44px;
+    font-family: Cocogoose;
 
 
 }
@@ -162,7 +190,7 @@ div.orange-line {
 
 
 .background2{
-    background: url("img/background3.jpg") no-repeat ;
+    background: url("img/background5.jpg") no-repeat ;
     background-color:#ec534288 ;
     background-size: cover;
     background-position: center;
@@ -193,24 +221,228 @@ div.orange-line {
 }
 
 footer{
-    display: flex;
+    display: flex !important;
     flex-direction: row;
     justify-content: space-between;
+    background-color: #f7f7f7;
+    margin-top: -16px;
+    margin-bottom: -1px;
 }
 
-footer > img{
+#logo{
 
     align-items: center;
     max-width: 200px;
     max-height: 100px;
-    margin-left: 107px;
     margin-top: 35px;
     margin-bottom: 10px;
-
+    margin-left: 37px;
 
 }
 
-footer > div{
+footer > div > p{
     text-align: center;
     font-weight: 500;
+    margin: 55px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .hamburger{
+        display: none;
+    }
+
+    nav{
+
+        height: 6rem;
+        background-color: #f7f7f7;
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0) 0px 32px 16px;
+
+    }
+
+    .social-media-contact{
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 47px;
+        padding-right: 300px;
+        list-style: none;
+        background-color: #272a31;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        
+    }
+
+    .social-media-contact li a{
+        
+        color: white;
+        font-weight: 500;
+        font-size: 1rem;
+        text-decoration: none;
+    }
+
+    .nav-desktop-container{
+        display: flex ;
+        flex-direction: row;
+
+    }
+
+    .hide-mobile{
+        display: block;
+    }
+    #navbar-logo{
+        width: 126px;
+        margin-left: 130px;
+        padding: 1rem;
+
+    }
+
+    .desktop-nav{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin-top: 25px;
+        gap: 80px;
+        width: 100%;
+        position: fixed;
+        right: -37rem;
+        top: 1.5rem;
+
+        
+
+    }
+
+    .desktop-nav li a{
+
+        color: #272a31;
+        font-weight: 500;
+        font-size: 1rem;
+        text-decoration: none;
+    }
+    
+
+    ul li .about-bar{
+        color: #EC5242;
+    }
+
+    ul li .register-bar{
+        color: #EC5242;
+        font-weight: 400;
+        padding: 0.5rem;
+        border: 5px solid #EC5242  ;
+    }
+
+    div.orange-line {
+        width: 5%;
+        height: 2px;
+        background-color: #EC5242;
+        margin: auto;
+    }
+    
+    
+    .ourmilkyway{
+        font-family: Cocogoose;
+        font-size: 6rem;
+        font-weight: 700;
+        padding-top: 8rem;
+        
+       
+        
+    }
+    
+    .conference-description{
+        
+        width: 75%;
+       
+    }
+    
+    
+    .contact{
+        text-align: center;
+        padding-bottom: 38px;
+    }
+    
+    .contact a{
+        margin-bottom: 10px;
+        text-decoration: underline;
+        color: black;
+        
+    }
+    
+    
+    .conference-logo{
+        text-align: center;
+        border-bottom: 2px solid gray;
+    
+    }
+
+    .conference-logo img{
+        width: 27%;
+        margin-top: 2rem;
+        border: 1px solid gray;
+        margin-bottom: 50px;
+    }
+
+
+    .past-conference-container{
+       
+        flex-direction: row;
+        
+        
+    }
+
+    .past-conf1{
+        padding: 1rem;
+    }
+    
+
+
+    .funding > div> h2 {
+        
+        font-weight: 400;
+        padding-top: 23px;
+        padding-bottom: 6px;
+    }
+
+    .funding > div > div {
+        background-color: #EC5242;
+        width: 5%;
+        height: 3px;
+        margin: auto;
+    }
+
+    .list-partners ul{
+        
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 5px;
+        margin-left: 233px;
+        margin-right: 222px;
+        
+        
+    }
+
+    #logo{
+
+        
+        max-height: 143px;
+        margin-top: 27px;
+        
+        margin-left: 168px;
+    
+    
+    }
+
+    footer > div > p {
+        
+        text-align: center;
+        font-weight: 500;
+        margin-right: 350px;
+        margin-top: 87px;
+    }
+ 
 }
