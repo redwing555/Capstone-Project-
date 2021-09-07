@@ -12,6 +12,7 @@
     <title>Capstone</title>
 </head>
 <body>
+   
     <nav class="navbar" >
 
         <ul class="social-media-contact">
@@ -27,24 +28,26 @@
 
                 <div class="hide-mobile"><a href="#" ><img id="navbar-logo" src="img/hubblespace.png" alt="hubble"></a></div>
                 <div>
-                    <ul class="desktop-nav">
+                    <ul class="desktop-nav ">
                     
-                        <li><a class="about-bar" href="about.html">About</a></li>
-                        <li><a href="#">Program</a></li>
-                        <li><a href="#">Accomodation</a></li>
-                        <li><a href="#">Funding</a></li>
-                        <li><a class="register-bar" href="#">Register</a></li>
+                        <li><a class="mnitem about-bar" href="about.html">About</a></li>
+                        <li><a class="mnitem" href="#mainprogram">Program</a></li>
+                        <li><a class="mnitem" href="#mainprogram">Accomodation</a></li>
+                        <li><a class="mnitem" href="#fund">Funding</a></li>
+                        <li><a class="mnitem register-bar" href="#">Register</a></li>
 
                     </ul>
                 </div>
             </div>
 
-
+        
         <button class="hamburger">
             <span><i class="fa fa-bars fa-2x"></i></span>
           </button>   
 
     </nav>
+
+    
 
 
     <main>
@@ -80,7 +83,7 @@
 
         </section>
 
-        <section class="main-program">
+        <section id="mainprogram" class="main-program">
 
             <div>
                 <h2>
@@ -132,7 +135,7 @@
         </section>
 
         <section class="speakers"></section>
-        <section class="funding">
+        <section id="fund" class="funding">
 
             <div>
                 <h2> Partner Institutions</h2>
@@ -175,6 +178,6 @@
     </footer>
 
 
-    
+    <script type="text/javascript" src="js/index.js" ></script>
 </body>
 </html>
