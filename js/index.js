@@ -107,7 +107,7 @@ function openMenu() {
     menu.classList.remove('nav-desktop-container');
     hamburger.classList.remove('hamburger');
     close.classList.add('close-active');
-    body.style.overflow = 'hidden !important';
+    body.style.overflow = 'hidden';
   }
 
   hamburger.addEventListener('click', openMenu);
