@@ -1,551 +1,454 @@
 
-
-
 @font-face {
-    font-family: Cocogoose;
-    font-weight: bold;
-    src: url("./../fonts/Cocogoose_trial.otf") format("opentype");
-  }
-
-
-
-
-
-nav{
-
-    background-color: #f7f7f7;
-
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0) 0px 32px 16px ;
-    height: 4.5rem;
-    width: 100%;
-    position: fixed !important;
-   /* z-index: 100;*/
-    top: 0;
-    bottom: 0;
-    text-align: left;
-    padding: 0;
-    border: none;
-    
+  font-family: Cocogoose;
+  font-weight: bold;
+  src: url("./../fonts/Cocogoose_trial.otf") format("opentype");
 }
 
-.clickme{
-    display: flex;
-    flex-direction: column;
-    
-
+.containerr {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-.clickme .desktop-nav{
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-    padding-top: 9rem;
-    background: #272a31;
-    list-style: none;
-    position: relative;
-    top: -4.5rem;
-    left: -1rem;
-    bottom: 0;
-    right: 0;
-    width: 26rem;
-    height: 47rem;
-    text-align: center;
-    padding-right: 3.5rem;
-    padding-top: 10rem;
-    opacity: 0.97;
+nav {
+  background-color: #f7f7f7;
+  box-shadow: rgba(0, 0, 0, 0.09) 0 2px 1px, rgba(0, 0, 0, 0.09) 0 4px 2px, rgba(0, 0, 0, 0.09) 0 8px 4px, rgba(0, 0, 0, 0.09) 0 16px 8px, rgba(0, 0, 0, 0) 0 32px 16px;
+  height: 4.5rem;
+  width: 100%;
+  position: fixed !important;
+
+  /* z-index: 100; */
+  top: 0;
+  bottom: 0;
+  text-align: left;
+  padding: 0;
+  border: none;
 }
 
-.clickme .desktop-nav a{
-    color: #D3D3D3 ;
-    font-family: Cocogoose;
-    font-size: x-large;
-    font-weight: bold;
-    padding: 1rem 0.5rem;
-    text-align: center;
-
+.desktop-nav {
+  display: none;
 }
 
-.clickme .desktop-nav .about-bar{
-    color: #EC5242;
+.social-media-contact {
+  display: none;
 }
 
-.clickme .desktop-nav .register-bar{
-    color: #EC5242;
-    position: relative;
-    top: 6.5rem;
-    font-weight: 400;
-    padding: 0.5rem;
-    border: 5px solid #EC5242  ;
-    margin-top: 1rem;
+.hamburger {
+  background-color: #f7f7f7;
+  color: #272a31;
+  border: none;
 }
 
-.clickme li a{
-
-    text-decoration: none;
-
+.hide-mobile {
+  display: none;
 }
 
-
-.close {
-    display: none;
-  }
-
-button.close-active {
-    color: #EC5242 ;
-    opacity: 0.9;
-    text-shadow: none;
-    z-index: 2;
-    border: none;
-    display: block;
-    font-weight: 500;
-    font-size: 4rem;
-    position: relative;
-    left: -2rem;
-    
-  } 
-
-
-
-
-.social-media-contact{
-    display: none;
+.infos {
+  background-color: #f7f7f7;
+  margin-top: 4rem;
+  padding-top: 1rem;
 }
-
-.desktop-nav{
-    display: none;
-}
-
-.hamburger{
-
-    background-color: #f7f7f7 ;
-    color: #272a31;
-    border: none;
-
-    
-
-}
-
-/*.hamburger{
-
-    background-color: #272a31 ;
-    color: white;
-    border: none;
-    width: 10px;
-    
-}*/
-
-.hide-mobile{
-    display: none;
-}
-
-.infos{
-    background-color: #f7f7f7;
-    margin-top: 4rem;
-    padding-top: 1rem;
-    
-    
-   
-}
-
-
 
 div.orange-line {
-    width: 33%;
-    height: 2px;
-    background-color: #EC5242;
-    margin: auto;
+  width: 33%;
+  height: 2px;
+  background-color: #ec5242;
+  margin: auto;
 }
 
-
-.ourmilkyway{
-    width: 100%;
-    text-align: center;
-    color: #EC5242;
-    text-transform: uppercase;
-    padding-top: 4rem;
-    
-   
-    
+.ourmilkyway {
+  width: 100%;
+  text-align: center;
+  color: #ec5242;
+  text-transform: uppercase;
+  padding-top: 4rem;
 }
 
-.conference-description{
-    margin: 61px auto;
-    padding: 1rem;
-    text-align: center;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    width: 75%;
-    background-color: white;
-    border: 1px solid #d3d3d3;
+.conference-description {
+  margin: 61px auto;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  width: 75%;
+  background-color: white;
+  border: 1px solid #d3d3d3;
 }
 
-
-.contact{
-    text-align: center;
-    padding-bottom: 38px;
+.contact {
+  text-align: center;
+  padding-bottom: 38px;
 }
 
-.contact a{
-    margin-bottom: 10px;
-    text-decoration: underline;
-    color: black;
-    
+.contact a {
+  margin-bottom: 10px;
+  text-decoration: underline;
+  color: black;
 }
 
-.arrow{
-    border-style: none;
-    background-color: transparent;
+.clickme {
+  display: flex;
+  flex-direction: column;
 }
 
-
-
-
-.conference-logo{
-    text-align: center;
-    border-bottom: 2px solid gray;
-
+.clickme .desktop-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  background: #272a31;
+  list-style: none;
+  position: relative;
+  top: -4.5rem;
+  left: -1rem;
+  bottom: 0;
+  right: 0;
+  width: 26rem;
+  height: 47rem;
+  text-align: center;
+  padding-right: 8.5rem;
+  padding-top: 10rem;
+  opacity: 0.97;
+  transition: 0.5s;
 }
 
-.logo-title
-{
-    font-size: bold;
-    margin-bottom: 18px;
-    margin-top: 44px;
-    font-family: Cocogoose;
+.clickme li a {
+  text-decoration: none;
 }
 
-.logo-description{
-    margin-top: 51px;
-    padding: 1rem;
+.clickme .desktop-nav a {
+  color: #d3d3d3;
+  font-family: 'Cocogoose', sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+  padding: 1rem 0.5rem;
+  text-align: center;
 }
 
-.conference-logo img{
-    width: 68%;
-    margin-top: 2rem;
-    border: 1px solid gray;
-    margin-bottom: 35px;
+.clickme .desktop-nav .about-bar {
+  color: #ec5242;
 }
 
-.past-conference{
-    text-align: center;
+.clickme .desktop-nav .register-bar {
+  color: #ec5242;
+  position: relative;
+  top: 6.5rem;
+  font-weight: 400;
+  padding: 0.5rem;
+  border: 5px solid #ec5242;
+  margin-top: 1rem;
 }
 
-.past-title{
-
-    
-    margin-bottom: 18px;
-    margin-top: 44px;
-    font-family: Cocogoose;
-
-
+.close {
+  display: none;
 }
 
-.past-description{
-
-    margin-top: 51px;
-    
-
+button.close-active {
+  color: #ec5242;
+  opacity: 0.9;
+  text-shadow: none;
+  z-index: 2;
+  border: none;
+  display: block;
+  font-weight: 500;
+  font-size: 4rem;
+  position: relative;
+  top: 0.5rem;
+  left: -2rem;
 }
 
-.past-conference-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    border-bottom: 1px solid gray;
-    padding-bottom: 63px;
+.arrow {
+  border-style: none;
+  background-color: transparent;
 }
 
-
-
-.background1{
-    background: url("img/background4.png") no-repeat ;
-    background-color: #ec534288 ;
-    background-size:cover;
-    background-position: center;
+.conference-logo {
+  text-align: center;
+  border-bottom: 2px solid gray;
 }
 
-
-.past-conf1{
-    height: 100%;
-    width: 100%;
-    background-color: #ec534288 ;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: .2rem;
+.logo-title {
+  margin-bottom: 18px;
+  margin-top: 44px;
+  font-family: 'Cocogoose', sans-serif;
 }
 
-
-.background2{
-    background: url("img/background5.jpg") no-repeat ;
-    background-color:#ec534288 ;
-    background-size: cover;
-    background-position: center;
+.logo-description {
+  margin-top: 51px;
+  padding: 1rem;
 }
 
-
-.past-conf2{
-    height: 100%;
-    width: 100%;
-    background-color: #ec534288 ;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding:1.1rem;
+.conference-logo img {
+  width: 68%;
+  margin-top: 2rem;
+  border: 1px solid gray;
+  margin-bottom: 35px;
 }
 
-.past-conf-title{
-    padding: 1rem;
-    color: white;
+.past-conference {
+  text-align: center;
 }
 
-.past-conf-description{
-    padding: 2rem;
-    color: white;
-    font-weight: 500;
-
+.past-title {
+  margin-bottom: 18px;
+  margin-top: 44px;
+  font-family: 'Cocogoose', sans-serif;
 }
 
-footer{
-    display: flex !important;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #f7f7f7;
-    margin-top: -16px;
-    margin-bottom: -1px;
+.past-description {
+  margin-top: 51px;
 }
 
-#logo{
-
-    align-items: center;
-    max-width: 200px;
-    max-height: 100px;
-    margin-top: 35px;
-    margin-bottom: 10px;
-    margin-left: 37px;
-
+.past-conference-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border-bottom: 1px solid gray;
+  padding-bottom: 63px;
 }
 
-footer > div > p{
-    text-align: center;
-    font-weight: 500;
-    margin: 55px;
+.background1 {
+  background: url("img/background4.png") no-repeat;
+  background-color: #ec534288;
+  background-size: cover;
+  background-position: center;
+}
+
+.past-conf1 {
+  height: 100%;
+  width: 100%;
+  background-color: #ec534288;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem;
+}
+
+.background2 {
+  background: url("img/background5.jpg") no-repeat;
+  background-color: #ec534288;
+  background-size: cover;
+  background-position: center;
+}
+
+.past-conf2 {
+  height: 100%;
+  width: 100%;
+  background-color: #ec534288;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.1rem;
+}
+
+.past-conf-title {
+  padding: 1rem;
+  color: white;
+}
+
+.past-conf-description {
+  padding: 2rem;
+  color: white;
+  font-weight: 500;
+}
+
+footer {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f7f7f7;
+  margin-top: -16px;
+  margin-bottom: -1px;
+}
+
+#logo {
+  align-items: center;
+  max-width: 200px;
+  max-height: 100px;
+  margin-top: 35px;
+  margin-bottom: 10px;
+  margin-left: 37px;
+}
+
+footer > div > p {
+  text-align: center;
+  font-weight: 500;
+  margin: 55px;
 }
 
 @media screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
 
-    .hamburger{
-        display: none;
-    }
+  nav {
+    height: 6rem;
+    background-color: #f7f7f7;
+    box-shadow: rgba(0, 0, 0, 0.09) 0 2px 1px, rgba(0, 0, 0, 0.09) 0 4px 2px, rgba(0, 0, 0, 0.09) 0 8px 4px, rgba(0, 0, 0, 0.09) 0 16px 8px, rgba(0, 0, 0, 0) 0 32px 16px;
+  }
 
-    nav{
+  .contact a {
+    margin-bottom: 10px;
+    text-decoration: underline;
+    color: black;
+  }
 
-        height: 6rem;
-        background-color: #f7f7f7;
-        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0) 0px 32px 16px;
+  .social-media-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 47px;
+    padding-right: 300px;
+    list-style: none;
+    background-color: #272a31;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
 
-    }
+  .social-media-contact li a {
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+  }
 
-    .social-media-contact{
-        display:flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        gap: 47px;
-        padding-right: 300px;
-        list-style: none;
-        background-color: #272a31;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        
-    }
+  .social-media-contact li :hover {
+    color: #d3d3d3;
+    transition: 300ms all ease-in;
+  }
 
-    .social-media-contact li a{
-        
-        color: white;
-        font-weight: 500;
-        font-size: 1rem;
-        text-decoration: none;
-    }
+  .nav-desktop-container {
+    display: flex;
+    flex-direction: row;
+  }
 
-    .social-media-contact li  :hover{
-        color: #D3D3D3;
-        transition: 300ms all ease-in;
-    }
+  .hide-mobile {
+    display: block;
+  }
 
-    .nav-desktop-container{
-        display: flex ;
-        flex-direction: row;
+  #navbar-logo {
+    width: 126px;
+    margin-left: 130px;
+    padding: 1rem;
+  }
 
-    }
+  .desktop-nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-top: 25px;
+    gap: 80px;
+    width: 100%;
+    position: fixed;
+    right: -37rem;
+    top: 1.5rem;
+  }
 
-    .hide-mobile{
-        display: block;
-    }
-    #navbar-logo{
-        width: 126px;
-        margin-left: 130px;
-        padding: 1rem;
+  .desktop-nav li a {
+    color: #272a31;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+  }
 
-    }
+  .desktop-nav li :hover {
+    color: #ec5242;
+    transition: 300ms;
+  }
 
-    .desktop-nav{
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        margin-top: 25px;
-        gap: 80px;
-        width: 100%;
-        position: fixed;
-        right: -37rem;
-        top: 1.5rem;
+  ul li .about-bar {
+    color: #ec5242;
+  }
 
-        
+  ul li .register-bar {
+    color: #ec5242;
+    font-weight: 400;
+    padding: 0.5rem;
+    border: 5px solid #ec5242;
+  }
 
-    }
+  div.orange-line {
+    width: 5%;
+    height: 2px;
+    background-color: #ec5242;
+    margin: auto;
+  }
 
-    .desktop-nav li a{
+  .ourmilkyway {
+    font-family: 'Cocogoose', sans-serif;
+    font-size: 6rem;
+    font-weight: 700;
+    padding-top: 8rem;
+  }
 
-        color: #272a31;
-        font-weight: 500;
-        font-size: 1rem;
-        text-decoration: none;
-    }
+  .conference-description {
+    width: 75%;
+  }
 
-    .desktop-nav li  :hover{
+  .contact {
+    text-align: center;
+    padding-bottom: 38px;
+  }
 
-        color: #EC5242;
-        transition: 300ms;
-        
-    }
-    
-    
+  .conference-logo {
+    text-align: center;
+    border-bottom: 2px solid gray;
+  }
 
-    ul li .about-bar{
-        color: #EC5242;
-    }
+  .conference-logo img {
+    width: 27%;
+    margin-top: 2rem;
+    border: 1px solid gray;
+    margin-bottom: 50px;
+  }
 
-    ul li .register-bar{
-        color: #EC5242;
-        font-weight: 400;
-        padding: 0.5rem;
-        border: 5px solid #EC5242  ;
-    }
+  .past-conference-container {
+    flex-direction: row;
+  }
 
-    div.orange-line {
-        width: 5%;
-        height: 2px;
-        background-color: #EC5242;
-        margin: auto;
-    }
-    
-    
-    .ourmilkyway{
-        font-family: Cocogoose;
-        font-size: 6rem;
-        font-weight: 700;
-        padding-top: 8rem;
-        
-       
-        
-    }
-    
-    .conference-description{
-        
-        width: 75%;
-       
-    }
-    
-    
-    .contact{
-        text-align: center;
-        padding-bottom: 38px;
-    }
-    
-    .contact a{
-        margin-bottom: 10px;
-        text-decoration: underline;
-        color: black;
-        
-    }
-    
-    
-    .conference-logo{
-        text-align: center;
-        border-bottom: 2px solid gray;
-    
-    }
+  .past-conf1 {
+    padding: 1rem;
+  }
 
-    .conference-logo img{
-        width: 27%;
-        margin-top: 2rem;
-        border: 1px solid gray;
-        margin-bottom: 50px;
-    }
+  .funding > div > h2 {
+    font-weight: 400;
+    padding-top: 23px;
+    padding-bottom: 6px;
+  }
 
+  .funding > div > div {
+    background-color: #ec5242;
+    width: 5%;
+    height: 3px;
+    margin: auto;
+  }
 
-    .past-conference-container{
-       
-        flex-direction: row;
-        
-        
-    }
+  .list-partners ul {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    margin-left: 233px;
+    margin-right: 222px;
+  }
 
-    .past-conf1{
-        padding: 1rem;
-    }
-    
+  #logo {
+    max-height: 143px;
+    margin-top: 27px;
+    margin-left: 168px;
+  }
 
-
-    .funding > div> h2 {
-        
-        font-weight: 400;
-        padding-top: 23px;
-        padding-bottom: 6px;
-    }
-
-    .funding > div > div {
-        background-color: #EC5242;
-        width: 5%;
-        height: 3px;
-        margin: auto;
-    }
-
-    .list-partners ul{
-        
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        gap: 5px;
-        margin-left: 233px;
-        margin-right: 222px;
-        
-        
-    }
-
-    #logo{
-
-        
-        max-height: 143px;
-        margin-top: 27px;
-        
-        margin-left: 168px;
-    
-    
-    }
-
-    footer > div > p {
-        
-        text-align: center;
-        font-weight: 500;
-        margin-right: 350px;
-        margin-top: 87px;
-    }
- 
+  footer > div > p {
+    text-align: center;
+    font-weight: 500;
+    margin-right: 350px;
+    margin-top: 87px;
+  }
 }
