@@ -85,7 +85,7 @@ function closeMenu() {
   hamburger.classList.add('hamburger');
   close.classList.remove('close-active');
   menu.classList.add('nav-desktop-container');
-  body.style.overflow = 'scroll';
+  body.style.overflow = 'auto';
 }
 
 close.addEventListener('click', closeMenu);

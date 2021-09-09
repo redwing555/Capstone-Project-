@@ -4,9 +4,15 @@
   src: url("./fonts/Cocogoose_trial.otf") format("opentype");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .containerr {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 nav {
@@ -319,7 +325,7 @@ footer div p {
   font-size: x-large;
   color: #858383;
   padding-top: 60px;
-  padding-bottom: 35px;
+  padding-bottom: 15px;
   font-family: 'Cocogoose', sans-serif;
 }
 
@@ -377,48 +383,6 @@ footer {
     box-shadow: rgba(0, 0, 0, 0.09) 0 2px 1px, rgba(0, 0, 0, 0.09) 0 4px 2px, rgba(0, 0, 0, 0.09) 0 8px 4px, rgba(0, 0, 0, 0.09) 0 16px 8px, rgba(0, 0, 0, 0) 0 32px 16px;
   }
 
-  .social-media-contact {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 47px;
-    padding-right: 300px;
-    list-style: none;
-    background-color: #272a31;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
-  .social-media-contact li a {
-    color: white;
-    font-weight: 500;
-    font-size: 1rem;
-    text-decoration: none;
-  }
-
-  .social-media-contact li :hover {
-    color: #d3d3d3;
-    transition: 300ms all ease-in;
-  }
-
-  .nav-desktop-container {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .hide-mobile {
-    display: block;
-  }
-
-  #navbar-logo {
-    width: 126px;
-    margin-left: 130px;
-    padding: 1rem;
-  }
-
   .desktop-nav {
     display: flex;
     flex-direction: row;
@@ -431,53 +395,24 @@ footer {
     top: 1.5rem;
   }
 
-  .desktop-nav li a {
-    color: #272a31;
+  footer > div > p {
+    text-align: center;
     font-weight: 500;
+    margin-right: 350px;
+    margin-top: 87px;
+  }
+
+  .program > p {
+    font-weight: bold;
+    padding: 1rem;
+  }
+
+  .welcome div p {
     font-size: 1rem;
-    text-decoration: none;
-  }
-
-  .desktop-nav li :hover {
-    color: #ec5242;
-    transition: 300ms;
-  }
-
-  ul li .about-bar {
-    color: #ec5242;
-  }
-
-  ul li .register-bar {
-    color: #ec5242;
-    font-weight: 600;
-    padding: 0.5rem;
-    border: 5px solid #ec5242;
-  }
-
-  .welcome {
-    background: url("img/background5.jpg") no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    margin-bottom: -4rem;
-  }
-
-  .welcome h1 {
-    background-color: rgb(255, 255, 255, 0.2);
+    line-height: 1.5rem;
+    padding: 1rem 1rem;
     width: 50%;
-    font-size: 3rem;
-    padding: 10px;
-    position: relative;
-    top: 136px;
-    left: 100px;
-  }
-
-  .welcome .conf-time {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 60px;
-    position: relative;
-    bottom: 7rem;
+    margin: 12rem 6rem;
   }
 
   .main-program {
@@ -527,7 +462,7 @@ footer {
     text-align: center;
     position: relative;
     top: 30rem;
-    left: 42rem;
+    left: 40.5rem;
     color: white;
     text-decoration: underline;
     font-weight: 600;
@@ -547,10 +482,134 @@ footer {
     align-self: center;
   }
 
+  .programs :hover > h3 {
+    border: none;
+    transform: scale(1);
+    opacity: 1;
+  }
+
   .program .fa {
     margin-top: 12px;
     padding-bottom: 2rem;
     color: #d3d3d3;
+  }
+
+  .programs :hover > .fa {
+    border: none;
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  .programs :hover > p {
+    border: none;
+    transform: scale(1);
+    color: white;
+    opacity: 1;
+    transition: 300ms;
+  }
+
+  .programs :hover {
+    border: 3px solid #f7f7f7;
+    transform: scale(1.1);
+    background-color: #272a31;
+    opacity: 0.8;
+    transition: 300ms;
+  }
+
+  .social-media-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 47px;
+    padding-right: 300px;
+    list-style: none;
+    background-color: #272a31;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .social-media-contact li a {
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+
+  .social-media-contact li :hover {
+    color: #d3d3d3;
+    transition: 300ms all ease-in;
+  }
+
+  .nav-desktop-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .hide-mobile {
+    display: block;
+  }
+
+  #navbar-logo {
+    width: 126px;
+    margin-left: 130px;
+    padding: 1rem;
+  }
+
+  #navbar-logo:hover {
+    transform: scale(1.2);
+    transition: 1s;
+  }
+
+  .desktop-nav li a {
+    color: #272a31;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+
+  .desktop-nav li :hover {
+    color: #ec5242;
+    transition: 100ms;
+  }
+
+  ul li .about-bar {
+    color: #ec5242;
+  }
+
+  ul li .register-bar {
+    color: #ec5242;
+    font-weight: 700;
+    padding: 0.5rem;
+    border: 5px solid #ec5242;
+  }
+
+  .welcome {
+    background: url("img/background5.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: -4rem;
+  }
+
+  .welcome h1 {
+    background-color: rgb(255, 255, 255, 0.2);
+    width: 50%;
+    font-size: 3rem;
+    padding: 10px;
+    position: relative;
+    top: 136px;
+    left: 100px;
+  }
+
+  .welcome .conf-time {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 60px;
+    position: relative;
+    bottom: 7rem;
   }
 
   .speakers {
@@ -605,25 +664,5 @@ footer {
     max-height: 143px;
     margin-top: 27px;
     margin-left: 168px;
-  }
-
-  footer > div > p {
-    text-align: center;
-    font-weight: 500;
-    margin-right: 350px;
-    margin-top: 87px;
-  }
-
-  .program > p {
-    font-weight: bold;
-    padding: 1rem;
-  }
-
-  .welcome div p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    padding: 1rem 1rem;
-    width: 50%;
-    margin: 12rem 6rem;
   }
 }
