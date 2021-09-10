@@ -73,4 +73,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed  and special credit to Cindy Shin (https://www.behance.net/adagio07) for this template under the Creative Commons license (https://creativecommons.org/licenses/by-nc/4.0/) .
+This project is [MIT](./MIT.md) licensed  and special credit to [Cindy Shin](https://www.behance.net/adagio07) for this template under [the Creative Commons license](https://creativecommons.org/licenses/by-nc/4.0/) .
