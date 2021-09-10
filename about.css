@@ -1,0 +1,474 @@
+
+@font-face {
+  font-family: Cocogoose;
+  font-weight: bold;
+  src: url("./fonts/Cocogoose_trial.otf") format("opentype");
+}
+
+.containerr {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+nav {
+  background-color: #f7f7f7;
+  box-shadow: rgba(0, 0, 0, 0.09) 0 2px 1px, rgba(0, 0, 0, 0.09) 0 4px 2px, rgba(0, 0, 0, 0.09) 0 8px 4px, rgba(0, 0, 0, 0.09) 0 16px 8px, rgba(0, 0, 0, 0) 0 32px 16px;
+  height: 4.5rem;
+  width: 100%;
+  position: fixed !important;
+
+  /* z-index: 100; */
+  top: 0;
+  bottom: 0;
+  text-align: left;
+  padding: 0;
+  border: none;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+.social-media-contact {
+  display: none;
+}
+
+.hamburger {
+  background-color: #f7f7f7;
+  color: #272a31;
+  border: none;
+}
+
+.hide-mobile {
+  display: none;
+}
+
+.infos {
+  background-color: #f7f7f7;
+  margin-top: 4rem;
+  padding-top: 1rem;
+}
+
+div.orange-line {
+  width: 33%;
+  height: 2px;
+  background-color: #ec5242;
+  margin: auto;
+}
+
+.ourmilkyway {
+  width: 100%;
+  text-align: center;
+  color: #ec5242;
+  text-transform: uppercase;
+  padding-top: 4rem;
+}
+
+.conference-description {
+  margin: 61px auto;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  width: 75%;
+  background-color: white;
+  border: 1px solid #d3d3d3;
+}
+
+.contact {
+  text-align: center;
+  padding-bottom: 38px;
+}
+
+.contact a {
+  margin-bottom: 10px;
+  text-decoration: underline;
+  color: black;
+}
+
+.clickme {
+  display: flex;
+  flex-direction: column;
+}
+
+.clickme .desktop-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  background: #272a31;
+  list-style: none;
+  position: relative;
+  top: -4.5rem;
+  left: -1rem;
+  bottom: 0;
+  right: 0;
+  width: 26rem;
+  height: 47rem;
+  text-align: center;
+  padding-right: 8.5rem;
+  padding-top: 10rem;
+  opacity: 0.97;
+  transition: 0.5s;
+}
+
+.clickme li a {
+  text-decoration: none;
+}
+
+.clickme .desktop-nav a {
+  color: #d3d3d3;
+  font-family: 'Cocogoose', sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+  padding: 1rem 0.5rem;
+  text-align: center;
+}
+
+.clickme .desktop-nav .about-bar {
+  color: #ec5242;
+}
+
+.clickme .desktop-nav .register-bar {
+  color: #ec5242;
+  position: relative;
+  top: 6.5rem;
+  font-weight: 400;
+  padding: 0.5rem;
+  border: 5px solid #ec5242;
+  margin-top: 1rem;
+}
+
+.close {
+  display: none;
+}
+
+button.close-active {
+  color: #ec5242;
+  opacity: 0.9;
+  text-shadow: none;
+  z-index: 2;
+  border: none;
+  display: block;
+  font-weight: 500;
+  font-size: 4rem;
+  position: relative;
+  top: 0.5rem;
+  left: -2rem;
+}
+
+.arrow {
+  border-style: none;
+  background-color: transparent;
+}
+
+.conference-logo {
+  text-align: center;
+  border-bottom: 2px solid gray;
+}
+
+.logo-title {
+  margin-bottom: 18px;
+  margin-top: 44px;
+  font-family: 'Cocogoose', sans-serif;
+}
+
+.logo-description {
+  margin-top: 51px;
+  padding: 1rem;
+}
+
+.conference-logo img {
+  width: 68%;
+  margin-top: 2rem;
+  border: 1px solid gray;
+  margin-bottom: 35px;
+}
+
+.past-conference {
+  text-align: center;
+}
+
+.past-title {
+  margin-bottom: 18px;
+  margin-top: 44px;
+  font-family: 'Cocogoose', sans-serif;
+}
+
+.past-description {
+  margin-top: 51px;
+}
+
+.past-conference-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border-bottom: 1px solid gray;
+  padding-bottom: 63px;
+}
+
+.background1 {
+  background: url("img/background4.png")  no-repeat;
+  background-color: #ec534288;
+  background-size: cover;
+  background-position: center;
+}
+
+.past-conf1 {
+  height: 100%;
+  width: 100%;
+  background-color: #ec534288;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem;
+}
+
+.background1 :hover {
+  transform: scale(1.1);
+  transition: 500ms all ease-in-out;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.background2 {
+  background: url("img/background5.jpg") no-repeat;
+  background-color: #ec534288;
+  background-size: cover;
+  background-position: center;
+}
+
+.background2 :hover {
+  transform: scale(1.1);
+  transition: 500ms all ease-in-out;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.past-conf2 {
+  height: 100%;
+  width: 100%;
+  background-color: #ec534288;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.1rem;
+}
+
+.past-conf-title {
+  padding: 1rem;
+  color: white;
+}
+
+.past-conf-description {
+  padding: 2rem;
+  color: white;
+  font-weight: 500;
+}
+
+footer {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f7f7f7;
+  margin-top: -16px;
+  margin-bottom: -1px;
+}
+
+#logo {
+  align-items: center;
+  max-width: 200px;
+  max-height: 100px;
+  margin-top: 35px;
+  margin-bottom: 10px;
+  margin-left: 37px;
+}
+
+footer > div > p {
+  text-align: center;
+  font-weight: 500;
+  margin: 55px;
+}
+
+@media screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  nav {
+    height: 6rem;
+    background-color: #f7f7f7;
+    box-shadow: rgba(0, 0, 0, 0.09) 0 2px 1px, rgba(0, 0, 0, 0.09) 0 4px 2px, rgba(0, 0, 0, 0.09) 0 8px 4px, rgba(0, 0, 0, 0.09) 0 16px 8px, rgba(0, 0, 0, 0) 0 32px 16px;
+  }
+
+  .contact a {
+    margin-bottom: 10px;
+    text-decoration: underline;
+    color: black;
+  }
+
+  .social-media-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 47px;
+    padding-right: 300px;
+    list-style: none;
+    background-color: #272a31;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .social-media-contact li a {
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+
+  .social-media-contact li :hover {
+    color: #d3d3d3;
+    transition: 300ms all ease-in;
+  }
+
+  .nav-desktop-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .hide-mobile {
+    display: block;
+  }
+
+  #navbar-logo {
+    width: 126px;
+    margin-left: 130px;
+    padding: 1rem;
+  }
+
+  #navbar-logo:hover {
+    transform: scale(1.2);
+    transition: 1s;
+  }
+
+  .desktop-nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-top: 25px;
+    gap: 80px;
+    width: 100%;
+    position: fixed;
+    right: -37rem;
+    top: 1.5rem;
+  }
+
+  .desktop-nav li a {
+    color: #272a31;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+
+  .desktop-nav li :hover {
+    color: #ec5242;
+    transition: 300ms;
+  }
+
+  ul li .about-bar {
+    color: #ec5242;
+  }
+
+  ul li .register-bar {
+    color: #ec5242;
+    font-weight: 700;
+    padding: 0.5rem;
+    border: 5px solid #ec5242;
+  }
+
+  div.orange-line {
+    width: 5%;
+    height: 2px;
+    background-color: #ec5242;
+    margin: auto;
+  }
+
+  .ourmilkyway {
+    font-family: 'Cocogoose', sans-serif;
+    font-size: 6rem;
+    font-weight: 700;
+    padding-top: 8rem;
+  }
+
+  .conference-description {
+    width: 75%;
+  }
+
+  .contact {
+    text-align: center;
+    padding-bottom: 38px;
+  }
+
+  .conference-logo {
+    text-align: center;
+    border-bottom: 2px solid gray;
+  }
+
+  .conference-logo img {
+    width: 27%;
+    margin-top: 2rem;
+    border: 1px solid gray;
+    margin-bottom: 50px;
+  }
+
+  .past-conference-container {
+    flex-direction: row;
+  }
+
+  .past-conf1 {
+    padding: 1rem;
+  }
+
+  .funding > div > h2 {
+    font-weight: 400;
+    padding-top: 23px;
+    padding-bottom: 6px;
+  }
+
+  .funding > div > div {
+    background-color: #ec5242;
+    width: 5%;
+    height: 3px;
+    margin: auto;
+  }
+
+  .list-partners ul {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    margin-left: 233px;
+    margin-right: 222px;
+  }
+
+  #logo {
+    max-height: 143px;
+    margin-top: 27px;
+    margin-left: 168px;
+  }
+
+  footer > div > p {
+    text-align: center;
+    font-weight: 500;
+    margin-right: 350px;
+    margin-top: 87px;
+  }
+}
